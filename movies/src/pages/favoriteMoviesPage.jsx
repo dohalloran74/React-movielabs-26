@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "../components/templateMovieListPage";
+import PageTemplate from "../components/templateMovieListPage";  
 
 const FavoriteMoviesPage = (props) => {
   const toDo = () => true;
