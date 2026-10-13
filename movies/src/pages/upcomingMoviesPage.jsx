@@ -7,8 +7,8 @@ import { getUpcomingMovies } from "../api/tmdb-api";
 const UpcomingMoviesPage = (props) => {
   const [movies, setMovies] = useState([]);
   
-  //const upcomingMovies  = movies.filter(m => m.favorite)
-  //localStorage.setItem('upcoming', JSON.stringify(upcomingMovies))
+  const upcomingMovies  = movies.filter(m => m.favorite)
+  localStorage.setItem('upcoming', JSON.stringify(upcomingMovies))
 
   const addToFavorites = (movieId) => {
     const updatedMovies = movies.map((m) =>
