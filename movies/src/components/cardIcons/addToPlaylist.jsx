@@ -9,7 +9,7 @@ const AddToPlaylistIcon = ({ movie }) => {
 
   const handleAddToPlaylist = (e) => {
     e.preventDefault();
-    context.addToPlaylist(movie);
+    context.addToMustWatch(movie);
   };
   
   return (
